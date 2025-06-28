@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="lightblue">
+    <!-- Navigation Bar -->
+   <div class="container">
+    <nav class="sidebar">
+        <aside class="sidebar">
+      <div class="logo-container">
+        <img src="logo.png" alt="Site Logo" class="logo" height="50" width="50">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Student Registration</h1>
+        <form>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            <br>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select your course</option>
+                <option value="bsc">B.Sc</option>
+                <option value="bcom">B.Com</option>
+                <option value="ba">B.A</option>
+                <option value="btech">B.Tech</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <button type="submit">Register</button>
+        </form>
+        <p>
+            Already have an account?
+            <a href="login.html">Login here</a>
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Student Portal. All rights reserved.</p>
+    </footer>
+    </div>
+</body>
+</html>

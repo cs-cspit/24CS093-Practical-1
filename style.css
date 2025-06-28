@@ -1,0 +1,183 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header and Navigation Bar */
+header {
+  background: #2d3e50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+nav {
+  background: #34495e;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav a:hover, nav a.active {
+  background: #1abc9c;
+  color: #fff;
+}
+
+/* Main content area */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+}
+
+/* Section titles */
+h1, h2, h3 {
+  color: #2d3e50;
+  margin-bottom: 18px;
+}
+
+/* Forms */
+form {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #bfc9d1;
+  border-radius: 4px;
+  font-size: 1em;
+  background: #f9fafc;
+}
+
+input[type="submit"], button {
+  background: #1abc9c;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+input[type="submit"]:hover, button:hover {
+  background: #16a085;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #e1e5ea;
+  text-align: left;
+}
+
+th {
+  background: #f0f4f8;
+  color: #2d3e50;
+}
+
+/* Alerts and Messages */
+.alert {
+  padding: 12px;
+  background: #e74c3c;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 18px;
+}
+
+.success {
+  background: #2ecc71;
+}
+
+/* Footer */
+footer {
+  background: #2d3e50;
+  color: #fff;
+  text-align: center;
+  padding: 14px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 0.95em;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  main {
+    padding: 16px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+/* Main layout container */
+.container {
+  display: flex;
+  height: 100vh; /* Full height */
+}
+
+/* Sidebar on the left */
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+/* Style for the links */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
