@@ -5,14 +5,14 @@
     <title>Login - Student Portal</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor="lightblue">
+<body>
+    <!-- Sidebar -->
     <nav class="sidebar">
-        <aside class="sidebar">
-      <div class="logo-container">
-        <img src="logo.png" alt="Site Logo" class="logo" height="50" width="50">
+        <div class="logo-container">
+            <img src="logo.png" alt="Site Logo" class="logo" height="50" width="50">
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            
             <li><a href="login.html">Login</a></li>
             <li><a href="register.html">Register</a></li>
             <li><a href="dashboard.html">Dashboard</a></li>
@@ -22,30 +22,26 @@
             <li><a href="announcements.html">Announcements</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
-    
-        <aside class="sidebar">
-      <div class="logo-container">
-        <img src="logo.png" alt="Site Logo" class="logo" height="50" width="50">
-        <!-- ...same navigation as above... -->
-         </div> 
     </nav>
+
+    <!-- Main Login Form -->
     <main>
         <h1>Student Login</h1>
-        <form>
+        <form action="dashboard.html" method="get">
             <label for="username">Username or Email:</label>
             <input type="text" id="username" name="username" required>
-            <br>
+
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            <br>
+
             <button type="submit">Login</button>
         </form>
         <p>Don't have an account? <a href="register.html">Register here</a>.</p>
     </main>
-    <li><a href="portal.html">Home</a></li>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Student Portal. All rights reserved.</p>
     </footer>
-    
 </body>
 </html>
