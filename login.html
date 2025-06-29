@@ -32,5 +32,20 @@
         <p>&copy; 2025 Student Portal. All rights reserved.</p>
     </footer>
     </div>
+            <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // prevent form from submitting normally
+
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      // Dummy credentials (you can later replace this with server-side check)
+      if (username === "student" && password === "1234") {
+        window.location.href = "dashboard.html"; // Redirect to dashboard
+      } else {
+        document.getElementById("errorMsg").textContent = "Invalid credentials!";
+      }
+    });
+  </script>
 </body>
 </html>
