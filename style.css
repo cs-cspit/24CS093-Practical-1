@@ -5,11 +5,12 @@
   box-sizing: border-box;
 }
 
+
 /* Body styling */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #f5f7fa;
-  color: #222;
+  background-color: #d4f0bc;
+  color: #0e0e0e;
   line-height: 1.6;
 }
 
@@ -23,7 +24,7 @@ header {
 }
 
 nav {
-  background: #34495e;
+  background: #0e6230;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -31,7 +32,7 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: #141414;
   text-decoration: none;
   font-weight: 500;
   padding: 8px 18px;
@@ -40,8 +41,8 @@ nav a {
 }
 
 nav a:hover, nav a.active {
-  background: #1abc9c;
-  color: #fff;
+  background: #d2d812;
+  color: #080808;
 }
 
 /* Main content area */
@@ -128,7 +129,7 @@ th {
 
 /* Footer */
 footer {
-  background: #2d3e50;
+  background: #359959;
   color: #fff;
   text-align: center;
   padding: 14px 0;
@@ -157,7 +158,7 @@ footer {
 /* Sidebar on the left */
 .sidebar {
   width: 200px;
-  background-color: #333;
+  background-color: #02482f;
   color: white;
   padding: 20px;
 }
