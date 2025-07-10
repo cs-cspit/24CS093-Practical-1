@@ -4,7 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+ body {
+      background-image: url('charusat.png');
+      background-repeat: no-repeat; /* Ensures image is not repeated */
+      background-size: cover;       /* Optional: covers entire screen */
+      background-position: center;  /* Optional: centers the image */
+    }
 
 body {
   font-size: 18px;
